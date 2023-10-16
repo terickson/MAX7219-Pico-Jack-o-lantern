@@ -17,5 +17,17 @@
     {"m1":"ghost1","m2":"pacman3","m3":"all_off","m4":"all_off","d":0.5},
     {"m1":"pacman4","m2":"all_off","m3":"all_off","m4":"all_off","d":0.5},
     {"m1":"all_off","m2":"all_off","m3":"all_off","m4":"all_off","d":0.5},
+],
+"bite": [
+    {"m1":"toothup1","m2":"toothdown1","m3":"toothdown1","m4":"toothup1","d":0.5},
+    {"m1":"toothup2","m2":"toothdown2","m3":"toothdown2","m4":"toothup2","d":0.5},
+    {"m1":"toothup3","m2":"toothdown3","m3":"toothdown3","m4":"toothup3","d":0.5},
+    {"m1":"toothup4","m2":"toothdown4","m3":"toothdown4","m4":"toothup4","d":0.5},
+    {"m1":"toothup5","m2":"toothdown5","m3":"toothdown5","m4":"toothup5","d":0.5},
+    {"m1":"toothup4","m2":"toothdown4","m3":"toothdown4","m4":"toothup4","d":0.5},
+    {"m1":"toothup3","m2":"toothdown3","m3":"toothdown3","m4":"toothup3","d":0.5},
+    {"m1":"toothup2","m2":"toothdown2","m3":"toothdown2","m4":"toothup2","d":0.5},
+    {"m1":"toothup1","m2":"toothdown1","m3":"toothdown1","m4":"toothup1","d":0.5},
 ]
+
 }
