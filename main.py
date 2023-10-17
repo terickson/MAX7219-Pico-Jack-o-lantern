@@ -75,9 +75,30 @@ def demo():
     anim_runner(eyes_anims['winkRight'],matrix_fonts.eyes)
     anim_runner(eyes_anims['stareAndBlink'],matrix_fonts.eyes)
 
-counter=1        
+def my_run(counter):
+    eyes.show_char([matrix_fonts.eyes['straight'], matrix_fonts.eyes['straight']])
+    mouth.show_char([matrix_fonts.shapes['toothup1'], matrix_fonts.shapes['toothdown1'], matrix_fonts.shapes['toothdown1'], matrix_fonts.shapes['toothup1']])
+    if(counter % 3 == 0):
+      anim_runner(eyes_anims['winkRight'],matrix_fonts.eyes)
+      anim_runner(eyes_anims['growEyes'],matrix_fonts.eyes)
+      anim_runner(mouth_anims['bite'],matrix_fonts.shapes)
+    elif(counter % 5 == 0):
+      anim_runner(eyes_anims['stareAndBlink'],matrix_fonts.eyes)
+      eyes.show_char([matrix_fonts.eyes['ghost1'], matrix_fonts.eyes['ghost1']])
+      scroll_message(mouth,matrix_fonts.textFont1,'Happy Halloween')
+    elif(counter % 7 == 0):
+      anim_runner(eyes_anims['stareAndBlink'],matrix_fonts.eyes)
+      eyes.show_char([matrix_fonts.shapes['invader1'], matrix_fonts.shapes['invader1']])
+      anim_runner(mouth_anims['pacman'],matrix_fonts.shapes)
+    else:
+      anim_runner(eyes_anims['stareAndBlink'],matrix_fonts.eyes)
+        
+counter=0       
 while True:
-    demo()
+    if counter == 0:
+      demo()
+    else:
+      my_run(counter)
     counter+=1
 
     
