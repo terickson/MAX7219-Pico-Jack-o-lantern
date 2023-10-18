@@ -97,6 +97,11 @@ counter=0
 while True:
     if counter == 0:
       demo()
+    elif counter == 20:
+      # Added because some of the max7219 modules 
+      # have an issue with running for several cycles 
+      # but a soft reboot seems to fix that issue.
+      machine.reset() 
     else:
       my_run(counter)
     counter+=1
